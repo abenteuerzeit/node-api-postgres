@@ -1,27 +1,40 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const db = require('./queries');
-const app = express();
-const port = 3000;
+const cors = require('cors');
+const morgan = require('morgan');
+// const path = require('path');
 
+const app = express();
+const PORT = 3000;
+const routes = require('./routes');
+
+app.use(cors());
 app.use(bodyParser.json());
+app.use(morgan('dev'));
+app.use(express.static(__dirname));
 app.use(
     bodyParser.urlencoded({
         extended: true,
     })
 );
 
+routes(app);
+
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'index.html'));
+// });
+
 app.get('/', (request, response) => {
     response.json({ info: 'Node.js, Express, and Postgres API' })
   });
 
-app.get('/users', db.getUsers);
-app.get('/users/:id', db.getUserById);
-app.post('/users', db.createUser);
-app.put('/users/:id', db.updateUser);
-app.delete('/users/:id', db.deleteUser);
+app.use((err, req, res, next) => {
+    console.log(err.message);
+    res.status(err.status).send(err.message);
+}); 
 
-
-app.listen(port, () => {
-    console.log(`App running on port ${port}.`)
+app.listen(PORT, () => {
+    console.log(`App running on port ${PORT}.`)
 });
+
+module.exports = app;
