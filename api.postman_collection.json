@@ -1,0 +1,864 @@
+{
+	"info": {
+		"_postman_id": "7d674b12-a280-4d34-a006-7414f4613e6a",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24015204"
+	},
+	"item": [
+		{
+			"name": "Get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "731"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2db-QYj2abQ+Wb66k2/4ImtwW0STkEs\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:49:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jerry\",\n        \"email\": \"jerry@example.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"George\",\n        \"email\": \"george@example.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Adrian\",\n        \"email\": \"amroz.muzyka@gmail.com\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Iwan\",\n        \"email\": \"iwanek@gmail.com\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Put Async\",\n        \"email\": \"putAsync@test.com\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Tomasz Mroz\",\n        \"email\": \"mrozsoccer@yahoo.com\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Test\",\n        \"email\": \"Test@test.com\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Test\",\n        \"email\": \"Test@test.com\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Test\",\n        \"email\": \"Test@test.com\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Test\",\n        \"email\": \"Test@test.com\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Put\",\n        \"email\": \"put@test.com\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Put\",\n        \"email\": \"put@test.com\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Test Async\",\n        \"email\": \"TestAsync@test.com\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Test Async\",\n        \"email\": \"TestAsync@test.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get users async",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users-async",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users-async"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get users async",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users-async",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users-async"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "332"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14c-cC10+uZvpi464aw9DZZaycGQI7A\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:26:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Jerry\",\n        \"email\": \"jerry@example.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"George\",\n        \"email\": \"george@example.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Adrian\",\n        \"email\": \"amroz.muzyka@gmail.com\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Iwan\",\n        \"email\": \"iwanek@gmail.com\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Zizi kot\",\n        \"email\": \"fistaszek@plaga.pl\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Tomasz Mroz\",\n        \"email\": \"mrozsoccer@yahoo.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "post user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test\",\r\n    \"email\": \"Test@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test\",\r\n    \"email\": \"Test@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16-r+oP3LjRhMLj8mxYtB1pG+E3RsE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:38:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User added with ID: 12"
+				}
+			]
+		},
+		{
+			"name": "post user async",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Test Async\",\r\n    \"email\": \"TestAsync@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users-async",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users-async"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "post user async",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Test Async\",\r\n    \"email\": \"TestAsync@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users-async",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users-async"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "22"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"16-Et9rr4tOwcymUQ9QFg2YwLdtKlE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:40:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User added with ID: 15"
+				}
+			]
+		},
+		{
+			"name": "get user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"12"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get user by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"12"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-a5jqcb9AN4AHdGdOjxOPOlzBTwI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:43:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 12,\n        \"name\": \"Test\",\n        \"email\": \"Test@test.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get user by id async",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users-async/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users-async",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get user by id async",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users-async/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users-async",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-222AIcKxRjmre4reEL8SO8IIdfM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:44:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Adrian\",\n        \"email\": \"amroz.muzyka@gmail.com\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "put user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Put\",\r\n    \"email\": \"put@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"11"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "put user",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Put\",\r\n    \"email\": \"put@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"11"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-I+VZyHKh7EnOb5P/QPBkY3wwzcA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:46:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User modified with ID: 11"
+				}
+			]
+		},
+		{
+			"name": "put user async",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Put Async\",\r\n    \"email\": \"putAsync@test.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users-async/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users-async",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "put user async",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Put Async\",\r\n    \"email\": \"putAsync@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users-async/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users-async",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-nuDzadKV5fUaJHiaeiX4PayQr1s\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:47:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User modified with ID: 5"
+				}
+			]
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"14"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete user",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/14",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"14"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-fglVrek6XnlllnNfQDY6OvP9tKE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:49:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User deleted with ID: 14"
+				}
+			]
+		},
+		{
+			"name": "delete user async",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users-async/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users-async",
+						"15"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete user async",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users-async/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users-async",
+								"15"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "24"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18-w/0iE1p8T9LE2PE/jgau1WrJud4\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Feb 2023 17:49:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "User deleted with ID: 15"
+				}
+			]
+		}
+	]
+}
